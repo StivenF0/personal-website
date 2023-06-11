@@ -2,29 +2,39 @@ import TypewriterTitle from "@/components/TypewriterTitle";
 import colors from "tailwindcss/colors";
 
 export default function Home() {
-  const gradient = ` 
-    radial-gradient(${colors.emerald[100]} 30%, ${colors.emerald[100]} 60%, transparent),
-    repeating-linear-gradient(
-      to right,
-      transparent,
-      transparent 149px,
-      ${colors.gray[300]} 151px,
-      ${colors.gray[300]} 151px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      transparent,
-      transparent 149px,
-      ${colors.gray[300]} 151px,
-      ${colors.gray[300]} 151px
-    )
-  `;
+  const gradientObj = {
+    color: colors.emerald[100],
+    lines: colors.gray[400],
+    gradient() {
+      return `
+        radial-gradient(
+          ${this.color} 30%, 
+          ${this.color} 60%, 
+          transparent
+        ),
+        repeating-linear-gradient(
+          to right,
+          transparent,
+          transparent 149px,
+          ${this.lines} 151px,
+          ${this.lines} 151px
+        ),
+        repeating-linear-gradient(
+          to bottom,
+          transparent,
+          transparent 149px,
+          ${this.lines} 151px,
+          ${this.lines} 151px
+        )
+      `;
+    },
+  };
 
   return (
     <main>
       <section
         className="w-full h-screen grid place-content-center text-5xl font-bold text-slate-900 bg-gradient-radial"
-        style={{ background: gradient }}
+        style={{ background: gradientObj.gradient() }}
       >
         <div className="">Olá, sou Stiven! 👋</div>
         <div className="">
