@@ -40,29 +40,13 @@ function PresentationSection({ children }: PresentationSectionProps) {
     >
       <div className="translate-y-[-10vh]">{children}</div>
       <div
-        className="absolute bottom-2 left-0 h-5 w-full"
+        className="absolute bottom-0 left-0 h-[2vh] w-full"
         style={{
           backgroundImage: `
-          repeating-linear-gradient(
-            to right,
-            transparent,
-            transparent 18px,
-            ${colors.slate[900]} 18px,
-            ${colors.slate[900]} 36px
-          )
-        `,
-        }}
-      ></div>
-      <div
-        className="absolute bottom-9 left-0 h-4 w-full"
-        style={{
-          backgroundImage: `
-          repeating-linear-gradient(
-            to right,
-            transparent,
-            transparent 33px,
-            ${colors.slate[900]} 33px,
-            ${colors.slate[900]} 50px
+          linear-gradient(
+            to top,
+            ${colors.slate[900]},
+            transparent
           )
         `,
         }}
