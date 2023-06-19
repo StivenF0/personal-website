@@ -11,7 +11,7 @@ function ProjectsSection({ children }: ProjectsSectionProps) {
   const projectImgClassName =
     "bg-slate-100 aspect-square rounded-[50%] self-center w-[80%] mx-auto";
   const projectTitleClassName =
-    "my-10 mr-6 border-2 border-slate-100 rounded-lg bg-[rgba(241,245,249,0.05)] pl-4 flex items-center transition-all hover:bg-[rgba(241,245,249,0.15)] cursor-pointer";
+    "h-24 mr-6 border-2 border-slate-100 rounded-lg bg-[rgba(241,245,249,0.05)] pl-4 flex items-center transition-all hover:bg-[rgba(241,245,249,0.15)] cursor-pointer self-center";
 
   return (
     <section className="w-full h-[110vh] text-5xl font-bold bg-slate-900 text-slate-100 pt-[calc(10vh+2rem)] px-8 pb-6 grid grid-cols-[40%,60%] grid-rows-[4rem,1fr] overflow-hidden relative">
