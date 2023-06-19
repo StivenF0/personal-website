@@ -1,6 +1,7 @@
 import EarthSVG from "@/../../public/earth.svg";
 import Image from "next/image";
 import { HTMLAttributes } from "react";
+import ProjectPreview from "./ProjectPreview";
 
 interface ProjectsSectionProps {
   children?: React.ReactNode;
@@ -24,11 +25,7 @@ function ProjectsSection({ children }: ProjectsSectionProps) {
         <div className={projectTitleClassName}>College Newsletter</div>
         <div className="bg-slate-100 col-start-1 col-end-1 row-start-1 row-end-4 absolute left-1/2 top-1/2 self-center mx-auto w-4 h-[60%] -translate-x-1/2 -translate-y-1/2"></div>
       </div>
-      <div className="col-start-2 col-end-2 row-start-1 row-end-4 mr-[20%] my-[8%] border-2 border-slate-100">
-        <div className="h-12 border-b-2 bg-slate-950 border-slate-100 text-xl flex items-center pl-8">
-          www.google.com
-        </div>
-      </div>
+      <ProjectPreview />
       <Image
         src={EarthSVG}
         alt="Earth"
