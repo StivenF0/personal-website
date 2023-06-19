@@ -18,7 +18,7 @@ function ProjectsSection({ children }: ProjectsSectionProps) {
       <h1 className="w-full h-full grid place-items-center">Meus Projetos</h1>
       <div className="col-start-1 col-end-1 row-start-2 row-end-2 grid justify-center grid-cols-[8rem,1fr] p-12 grid-rows-3 relative text-2xl">
         <div className={projectImgClassName}></div>
-        <div className={projectTitleClassName}>Clone GPT</div>
+        <div className={projectTitleClassName}>CloneGPT</div>
         <div className={projectImgClassName}></div>
         <div className={projectTitleClassName}>Oficina 4.0</div>
         <div className={projectImgClassName}></div>
