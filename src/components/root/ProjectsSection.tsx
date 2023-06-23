@@ -1,13 +1,16 @@
+"use client";
 import EarthSVG from "@/../../public/earth.svg";
 import Image from "next/image";
-import { HTMLAttributes } from "react";
 import ProjectPreview from "./ProjectPreview";
+import { useState } from "react";
 
 interface ProjectsSectionProps {
   children?: React.ReactNode;
 }
 
 function ProjectsSection({ children }: ProjectsSectionProps) {
+  const [selected, setSelected] = useState<0 | 1 | 2>(2);
+
   const projectImgClassName =
     "bg-slate-100 aspect-square rounded-[50%] self-center w-[80%] mx-auto";
   const projectTitleClassName =
@@ -18,14 +21,20 @@ function ProjectsSection({ children }: ProjectsSectionProps) {
       <h1 className="w-full h-full grid place-items-center">Meus Projetos</h1>
       <div className="col-start-1 col-end-1 row-start-2 row-end-2 grid justify-center grid-cols-[8rem,1fr] p-12 grid-rows-3 relative text-2xl">
         <div className={projectImgClassName}></div>
-        <div className={projectTitleClassName}>CloneGPT</div>
+        <div className={projectTitleClassName} onClick={() => setSelected(0)}>
+          CloneGPT
+        </div>
         <div className={projectImgClassName}></div>
-        <div className={projectTitleClassName}>Oficina 4.0</div>
+        <div className={projectTitleClassName} onClick={() => setSelected(1)}>
+          Oficina 4.0
+        </div>
         <div className={projectImgClassName}></div>
-        <div className={projectTitleClassName}>College Newsletter</div>
+        <div className={projectTitleClassName} onClick={() => setSelected(2)}>
+          College Newsletter
+        </div>
         <div className="bg-slate-100 col-start-1 col-end-1 row-start-1 row-end-4 absolute left-1/2 top-1/2 self-center mx-auto w-4 h-[60%] -translate-x-1/2 -translate-y-1/2"></div>
       </div>
-      <ProjectPreview />
+      <ProjectPreview selected={selected} />
       <Image
         src={EarthSVG}
         alt="Earth"
