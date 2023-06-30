@@ -44,7 +44,6 @@ function ProjectsSection({ children }: ProjectsSectionProps) {
           Oficina 4.0
         </div>
         <div className={projectImgClassName}>
-          {/* Change to Image later */}
           <Image
             src="/College_icon.png"
             alt="CollegeIcon2"

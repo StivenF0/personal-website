@@ -1,3 +1,4 @@
+import ExperienceSection from "@/components/root/ExperienceSection";
 import PresentationSection from "@/components/root/PresentationSection";
 import ProjectsSection from "@/components/root/ProjectsSection";
 import TypewriterTitle from "@/components/root/TypewriterTitle";
@@ -12,6 +13,7 @@ export default function Home() {
         </div>
       </PresentationSection>
       <ProjectsSection />
+      <ExperienceSection />
     </main>
   );
 }
