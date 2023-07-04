@@ -1,17 +1,11 @@
-import ExperienceSection from "@/components/root/ExperienceSection";
-import PresentationSection from "@/components/root/PresentationSection";
-import ProjectsSection from "@/components/root/ProjectsSection";
-import TypewriterTitle from "@/components/root/TypewriterTitle";
+import ExperienceSection from "@/components/home/ExperienceSection";
+import PresentationSection from "@/components/home/PresentationSection";
+import ProjectsSection from "@/components/home/ProjectsSection";
 
 export default function Home() {
   return (
     <main>
-      <PresentationSection>
-        <div>Olá, sou Stiven! 👋</div>
-        <div>
-          Programador <TypewriterTitle />
-        </div>
-      </PresentationSection>
+      <PresentationSection />
       <ProjectsSection />
       <ExperienceSection />
     </main>

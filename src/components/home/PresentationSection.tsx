@@ -1,4 +1,5 @@
 import colors from "tailwindcss/colors";
+import TypewriterTitle from "./TypewriterTitle";
 
 interface PresentationSectionProps {
   children?: React.ReactNode;
@@ -38,7 +39,12 @@ function PresentationSection({ children }: PresentationSectionProps) {
       className="w-full h-[110vh] grid place-content-center text-5xl font-bold text-slate-900 relative"
       style={{ background: gradientObj.gradient() }}
     >
-      <div className="translate-y-[-10vh]">{children}</div>
+      <div className="translate-y-[-10vh]">
+        <div>Olá, sou Stiven! 👋</div>
+        <div>
+          Programador <TypewriterTitle />
+        </div>
+      </div>
       <div
         className="absolute bottom-0 left-0 h-[2vh] w-full"
         style={{
