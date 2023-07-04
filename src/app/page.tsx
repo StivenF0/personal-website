@@ -1,6 +1,7 @@
-import ExperienceSection from "@/components/home/ExperienceSection";
-import PresentationSection from "@/components/home/PresentationSection";
-import ProjectsSection from "@/components/home/ProjectsSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import Footer from "@/components/Footer";
+import PresentationSection from "@/components/PresentationSection";
+import ProjectsSection from "@/components/ProjectsSection";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <PresentationSection />
       <ProjectsSection />
       <ExperienceSection />
+      <Footer />
     </main>
   );
 }
