@@ -9,8 +9,14 @@ export default function ExperienceSection() {
           backgroundImage: `linear-gradient(to bottom, ${colors.slate[900]}, transparent)`,
         }}
       />
+      <div
+        className="absolute bottom-0 left-0 h-[1vh] w-full"
+        style={{
+          backgroundImage: `linear-gradient(to top, ${colors.zinc[800]}, transparent)`,
+        }}
+      />
       {/* Content */}
-      <div className="max-w-4xl w-[70vw] pt-8 text-slate-800 flex flex-col gap-4 justify-center">
+      <div className="max-w-4xl w-[70vw] text-slate-800 flex flex-col gap-4 justify-center">
         <h2 className="text-5xl font-extrabold mx-auto">Formação</h2>
         <div className="flex gap-6">
           <div className="h-44 w-44 bg-white/50 rounded-[50%] grid place-content-center text-6xl">
