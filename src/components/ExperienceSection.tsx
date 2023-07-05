@@ -18,7 +18,7 @@ export default function ExperienceSection() {
       {/* Content */}
       <div className="max-w-4xl w-[70vw] text-slate-800 flex flex-col gap-4 justify-center">
         <h2 className="text-5xl font-extrabold mx-auto">Formação</h2>
-        <div className="flex gap-6">
+        <div className="flex gap-8">
           <div className="h-44 w-44 bg-white/50 rounded-[50%] grid place-content-center text-6xl">
             👨‍🎓
           </div>
@@ -27,8 +27,9 @@ export default function ExperienceSection() {
             <div className="text-slate-700 text-3xl">IFRN - Campus Mossoró</div>
           </div>
         </div>
+        <hr className={`border-slate-800`} />
         <h2 className="text-5xl font-extrabold mx-auto mt-8">Experiência</h2>
-        <div className="flex gap-6">
+        <div className="flex gap-8">
           <div className="h-44 w-44 bg-white/50 rounded-[50%] grid place-content-center text-6xl">
             🔧
           </div>
