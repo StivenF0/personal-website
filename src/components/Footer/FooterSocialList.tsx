@@ -25,7 +25,7 @@ export default function FooterSocialList() {
   return (
     <div className="flex text-zinc-50 text-4xl gap-3">
       {items.map((item) => (
-        <FooterSocialItem {...item} />
+        <FooterSocialItem key={item.href} {...item} />
       ))}
     </div>
   );
