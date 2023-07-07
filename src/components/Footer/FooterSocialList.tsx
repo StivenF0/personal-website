@@ -7,21 +7,25 @@ export default function FooterSocialList() {
     {
       href: "/Curriculum.pdf",
       icon: HiDocumentText,
+      desc: "Download Curriculum Vitae",
       download: true,
     },
     {
       href: "https://github.com/StivenF0",
       icon: AiFillGithub,
+      desc: "Profile on github",
       download: false,
     },
     {
       href: "https://www.linkedin.com/in/stiven-felipe-c%C3%A2mara-fons%C3%AAca-a40317230",
       icon: AiFillLinkedin,
+      desc: "Profile on LinkedIn",
       download: false,
     },
     {
       href: "https://www.instagram.com/stivenfelipe/",
       icon: AiFillInstagram,
+      desc: "Profile on Instagram",
       download: false,
     },
   ];
