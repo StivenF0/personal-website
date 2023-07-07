@@ -5,20 +5,24 @@ import FooterSocialItem from "./FooterSocialItem";
 export default function FooterSocialList() {
   const items = [
     {
-      href: "#",
+      href: "/Curriculum.pdf",
       icon: HiDocumentText,
+      download: true,
     },
     {
       href: "https://github.com/StivenF0",
       icon: AiFillGithub,
+      download: false,
     },
     {
       href: "https://www.linkedin.com/in/stiven-felipe-c%C3%A2mara-fons%C3%AAca-a40317230",
       icon: AiFillLinkedin,
+      download: false,
     },
     {
       href: "https://www.instagram.com/stivenfelipe/",
       icon: AiFillInstagram,
+      download: false,
     },
   ];
 
