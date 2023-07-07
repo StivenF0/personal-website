@@ -6,7 +6,7 @@ import EarthImage from "./EarthImage";
 import ProjectsSectionRoot from "./ProjectsSectionRoot";
 
 export default function ProjectsSection() {
-  const [selected, setSelected] = useState<0 | 1 | 2>(2);
+  const [selected, setSelected] = useState<0 | 1 | 2>(0);
 
   return (
     <ProjectsSectionRoot>
