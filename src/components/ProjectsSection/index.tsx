@@ -11,7 +11,9 @@ export default function ProjectsSection() {
   return (
     <ProjectsSectionRoot>
       {/* Title */}
-      <h1 className="w-full h-full grid place-items-center">Meus Projetos</h1>
+      <h1 className="w-full h-full grid place-items-center max-lg:col-start-1 max-lg:col-end-2 max-lg:row-start1 max-lg:row-end-2">
+        Meus Projetos
+      </h1>
 
       {/* Options to chose the image on the preview */}
       <ProjectsSectionOptions setSelected={setSelected} />
