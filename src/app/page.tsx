@@ -8,6 +8,7 @@
   - amber.300 = fcd34d
 */
 
+import DownArrowSVG from "@/components/index/DownArrowSVG"
 import GithubLogoSVG from "@/components/index/GithubLogoSVG"
 import InstagramLogoSVG from "@/components/index/InstagramLogoSVG"
 import LinkedInLogoSVG from "@/components/index/LinkedInLogoSVG"
@@ -40,6 +41,9 @@ const Home = () => {
               <span className="text-5xl">Desenvolvedor <span className="text-amber-300">Frontend</span></span>
             </div>
           </div>
+        </div>
+        <div className="w-full flex items-center justify-center pb-8">
+          <DownArrowSVG className="w-6" />
         </div>
       </section>
     </main>
