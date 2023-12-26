@@ -5,6 +5,7 @@
   - lightgray = d9d9d9
   - stone.200 = e7e5e4
   - slate.400 = 94a3b8
+  - slate.700 = 334155
   - amber.300 = fcd34d
 */
 
@@ -12,6 +13,7 @@ import DownArrowSVG from "@/components/index/DownArrowSVG"
 import GithubLogoSVG from "@/components/index/GithubLogoSVG"
 import InstagramLogoSVG from "@/components/index/InstagramLogoSVG"
 import LinkedInLogoSVG from "@/components/index/LinkedInLogoSVG"
+import ProjectsSlider from "@/components/index/ProjectsSlider"
 import StivenDevLogoSVG from "@/components/index/StivenDevLogoSVG"
 
 const Home = () => {
@@ -44,6 +46,15 @@ const Home = () => {
         </div>
         <div className="w-full flex items-center justify-center pb-8">
           <DownArrowSVG className="w-6" />
+        </div>
+      </section>
+      <section className="h-screen bg-slate-700 pt-[3.2rem] px-60 flex flex-col">
+        <div className="flex justify-between">
+          <div className="text-lightgray text-4xl underline">Meus projetos</div>
+          {/* <div className="text-lightgray text-3xl opacity-80">Mais projetos...</div> */}
+        </div>
+        <div className="flex flex-1 items-center justify-center mt-0">
+          <ProjectsSlider />
         </div>
       </section>
     </main>
