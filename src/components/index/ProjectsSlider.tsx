@@ -33,7 +33,7 @@ const ProjectsSlider = ({ className }: ProjectsSliderProps) => {
 
 
   return (
-    <div className={`${className} w-full aspect-video rounded-[3.2rem] overflow-hidden relative`}>
+    <div className={`${className} w-full aspect-video rounded-[3.2rem] overflow-hidden relative shadow-lg`}>
       <button
         onClick={reduceImageIndex}
         className={`absolute z-10 left-0 top-0 bottom-0 w-11 flex items-center justify-end transition-opacity ${idx !== 0 ? "opacity-100 cursor-pointer" : "opacity-0 cursor-default"}`}
@@ -51,13 +51,13 @@ const ProjectsSlider = ({ className }: ProjectsSliderProps) => {
       <div className="absolute h-8 z-10 bottom-0 right-0 left-0 flex items-center justify-center gap-4">
         {
           images.map((_, buttonIdx) =>
-            <button className={`w-4 h-4 rounded-[50%] ${idx == buttonIdx ? "bg-lightgray" : "bg-slate-700"}`}></button>
+            <button key={buttonIdx} className={`w-4 h-4 rounded-[50%] ${idx == buttonIdx ? "bg-lightgray" : "bg-slate-700"}`}></button>
           )
         }
       </div>
 
       <div className={`w-full h-full transition-all flex`} style={{ translate: `calc(${idx}*-100%) 0` }}>
-        {images.map((image) => <img src={image.url} />)}
+        {images.map((image, indexNum) => <img key={indexNum} src={image.url} />)}
       </div>
     </div>
   )
