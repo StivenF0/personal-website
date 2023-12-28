@@ -5,3 +5,7 @@
 body {
   @apply box-border p-0 m-0;
 }
+
+html {
+  @apply scroll-smooth;
+}

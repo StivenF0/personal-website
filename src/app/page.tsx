@@ -21,6 +21,7 @@ import JavascriptLogoSVG from "@/components/index/JavascriptLogoSVG"
 import PythonLogoSVG from "@/components/index/PythonLogoSVG"
 import ReactLogoSVG from "@/components/index/ReactLogoSVG"
 import ProgressBar from "@/components/index/ProgressBar"
+import ContactForm from "@/components/index/ContactForm"
 
 const Home = () => {
   return (
@@ -32,9 +33,9 @@ const Home = () => {
           </div>
           <div className="flex text-lightgray gap-9 underline text-xl">
             <a href="#">Home</a>
-            <a href="#">Projetos</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Contato</a>
+            <a href="#projectsSection">Projetos</a>
+            <a href="#skillsSection">Habilidades</a>
+            <a href="#contactSection">Contato</a>
           </div>
         </nav>
         <div className="flex-1 grid grid-cols-[5.6rem,1fr] mx-[3.2rem]">
@@ -55,7 +56,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="h-screen bg-slate-700 pt-[2rem] px-60 flex flex-col">
+      <section className="h-screen bg-slate-700 pt-[2rem] px-60 flex flex-col" id="projectsSection">
         <div className="flex justify-between">
           <div className="text-lightgray text-4xl underline">Meus projetos</div>
           {/* <div className="text-lightgray text-3xl opacity-80">Mais projetos...</div> */}
@@ -65,8 +66,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="h-screen bg-neutral-700 flex">
-        <div className="bg-lightgray h-full w-80 grid auto-rows-fr">
+      <section className="h-screen bg-neutral-700 flex" id="skillsSection">
+        <div className="bg-lightgray h-full w-80 grid auto-rows-fr py-14">
           <div className="flex items-center justify-end text-5xl font-semibold text-neutral-700 translate-x-36 underline">Habili<span className="text-lightgray underline">dades</span></div>
           <div className="flex items-center justify-end gap-4 pr-6">
             <HTMLLogoSVG className="w-12" />
@@ -80,7 +81,7 @@ const Home = () => {
             <PythonLogoSVG className="w-20" />
           </div>
         </div>
-        <div className="flex-1 grid auto-rows-fr pl-14">
+        <div className="flex-1 grid auto-rows-fr pl-14 py-14">
           <div />
           <div className="flex flex-col justify-center">
             <div className="text-4xl font-semibold text-lightgray">Desenvolvimento Web</div>
@@ -95,6 +96,10 @@ const Home = () => {
             <ProgressBar valuePercent={100} />
           </div>
         </div>
+      </section>
+
+      <section className="h-screen bg-amber-300 flex items-center justify-center py-5" id="contactSection">
+        <ContactForm />
       </section>
     </main>
   )
