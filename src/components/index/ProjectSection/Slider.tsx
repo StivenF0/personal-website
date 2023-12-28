@@ -1,13 +1,13 @@
 "use client";
 import { useState } from "react"
-import LeftArrowSVG from "./LeftArrowSVG";
-import RightArrowSVG from "./RightArrowSVG";
+import LeftArrowSVG from "./svgs/LeftArrowSVG";
+import RightArrowSVG from "./svgs/RightArrowSVG";
 
-interface ProjectsSliderProps {
+interface SliderProps {
   className?: string
 }
 
-const ProjectsSlider = ({ className }: ProjectsSliderProps) => {
+const Slider = ({ className }: SliderProps) => {
   const [idx, setIdx] = useState(0);
   const images = [
     {
@@ -63,4 +63,4 @@ const ProjectsSlider = ({ className }: ProjectsSliderProps) => {
   )
 }
 
-export default ProjectsSlider
+export default Slider
