@@ -2,6 +2,8 @@
 import { useState } from "react"
 import LeftArrowSVG from "./svgs/LeftArrowSVG";
 import RightArrowSVG from "./svgs/RightArrowSVG";
+import images from "./images";
+import Image from "next/image";
 
 interface SliderProps {
   className?: string
@@ -9,20 +11,6 @@ interface SliderProps {
 
 const Slider = ({ className }: SliderProps) => {
   const [idx, setIdx] = useState(0);
-  const images = [
-    {
-      url: "https://placehold.co/1280x720/blue/000000?text=First+image"
-    },
-    {
-      url: "https://placehold.co/1280x720/red/000000?text=Second+image"
-    },
-    {
-      url: "https://placehold.co/1280x720/green/000000?text=Third+image"
-    },
-    {
-      url: "https://placehold.co/1280x720/orange/000000?text=Fourth+image"
-    },
-  ];
 
   const setImageIndex = (newIdx: number) => {
     if (newIdx >= images.length || newIdx < 0) return;
@@ -51,13 +39,13 @@ const Slider = ({ className }: SliderProps) => {
       <div className="absolute h-8 z-10 bottom-0 right-0 left-0 flex items-center justify-center gap-4">
         {
           images.map((_, buttonIdx) =>
-            <button key={buttonIdx} className={`w-4 h-4 rounded-[50%] ${idx == buttonIdx ? "bg-lightgray" : "bg-slate-700"}`}></button>
+            <button key={buttonIdx} className={`w-4 h-4 rounded-[50%] ${idx == buttonIdx ? "bg-amber-300" : "bg-slate-700"}`} onClick={() => setImageIndex(buttonIdx)}></button>
           )
         }
       </div>
 
       <div className={`w-full h-full transition-all flex`} style={{ translate: `calc(${idx}*-100%) 0` }}>
-        {images.map((image, indexNum) => <img key={indexNum} src={image.url} />)}
+        {images.map((image, indexNum) => <Image width={1280} height={720} key={indexNum} src={image.url} alt={indexNum.toString()} />)}
       </div>
     </div>
   )
