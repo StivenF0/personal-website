@@ -1,14 +1,3 @@
-
-/*
-  Colors:
-  - neutral.700 = 404040
-  - lightgray = d9d9d9
-  - stone.200 = e7e5e4
-  - slate.400 = 94a3b8
-  - slate.700 = 334155
-  - amber.300 = fcd34d
-*/
-
 import ContactSection from "@/components/index/ContactSection"
 import HomeSection from "@/components/index/HomeSection"
 import ProjectSection from "@/components/index/ProjectSection"
