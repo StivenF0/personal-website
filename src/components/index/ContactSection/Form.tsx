@@ -3,7 +3,7 @@
 const Form = () => {
   return (
     <form
-      className="bg-lightgray w-[50rem] h-full rounded-[3.3rem] px-14 shadow-xl flex flex-col"
+      className="bg-lightgray w-[50rem] h-full rounded-[3.3rem] px-14 shadow-xl flex flex-col justify-center"
       onSubmit={(e) => { e.preventDefault }}
     >
       <h1 className="text-center text-5xl font-semibold text-neutral-700 mt-4">Contate-me</h1>
