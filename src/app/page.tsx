@@ -1,4 +1,5 @@
 import ContactSection from "@/components/index/ContactSection"
+import Footer from "@/components/index/Footer"
 import HomeSection from "@/components/index/HomeSection"
 import ProjectSection from "@/components/index/ProjectSection"
 import SkillSection from "@/components/index/SkillSection"
@@ -38,6 +39,10 @@ const Home = () => {
       <ContactSection.Root>
         <ContactSection.Form />
       </ContactSection.Root>
+
+      <Footer.Root>
+        <Footer.SocialLinks />
+      </Footer.Root>
     </main>
   )
 }

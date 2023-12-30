@@ -1,6 +1,6 @@
-import GithubLogoSVG from "./svgs/GithubLogoSVG"
-import InstagramLogoSVG from "./svgs/InstagramLogoSVG"
-import LinkedInLogoSVG from "./svgs/LinkedInLogoSVG"
+import GithubLogoSVG from "../svgs/GithubLogoSVG"
+import InstagramLogoSVG from "../svgs/InstagramLogoSVG"
+import LinkedInLogoSVG from "../svgs/LinkedInLogoSVG"
 
 const SocialLinks = () => {
   return (
